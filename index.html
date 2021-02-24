@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #BACFE6;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(images/cardboard-flat.png);
+        }
+
+        #ayah-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        #ayah-content {
+            min-width: 360px;
+            max-width: 480px;
+            height: fit-content;
+            border-radius: 6px;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            background: #E6D6BA;
+            background-repeat: repeat;
+            color: #111;
+            background-image: url(images/arabesque.png);
+            box-shadow: 1px 1px 2px 2px rgb(150 150 150 / 20%);
+        }
+
+        #ayah-content h5 {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 1rem 1rem;
+            border-bottom: 1px solid #abadad;
+            padding-bottom: 4px;
+        }
+
+        #ayah-content p {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: monospace;
+        }
+
+        #btn-next, #btn-prev {
+            font-size: 52px;
+            font-weight: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #btn-next {
+            left: -38px;
+        }
+
+        #btn-prev {
+            right: -38px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body dir="rtl">
+    <h3>Hefd tab</h3>
+    <div id="ayah-container">
+        <div id="ayah-content"></div>
+        <div id="btn-next">&gt;</div>
+        <div id="btn-prev">&lt;</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
