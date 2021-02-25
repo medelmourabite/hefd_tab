@@ -2,14 +2,7 @@
     "name": "Hefd tab",
     "version": "1.0",
     "description": "An extension to help you learn Quran",
-    "permissions": ["declarativeContent", "storage"],
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
-    "page_action": {
-        "default_popup": "popup.html"
-    },
+    "permissions": ["storage"],
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
